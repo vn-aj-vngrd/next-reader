@@ -34,12 +34,12 @@ const Home: NextPage = () => {
 
   return (
     <div className="flex flex-col items-center space-y-12 text-center">
-      <div className="container ">
+      <div className="container space-y-4">
         <div className="items-center bg-white border border-gray-200 rounded shadow-sm">
           <Image src={image} height={500} width={1024} alt="" />
         </div>
 
-        <div className="pt-2">
+        <div>
           {text && (
             <h4 className="text-white">
               <Output text={text} />
