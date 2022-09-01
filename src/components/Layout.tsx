@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import Footer from "./Footer";
 import Header from "./Header";
-// import Meta from "./Meta";
+import Meta from "./Meta";
 
 const Layout = ({ children }: any) => {
   const route = useRouter().route;
@@ -11,7 +11,7 @@ const Layout = ({ children }: any) => {
     <>
       <Head>
         <title>NextRead</title>
-        {/* <Meta /> */}
+        <Meta />
       </Head>
       <div className="flex flex-col h-screen">
         <Header />

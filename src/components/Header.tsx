@@ -3,9 +3,11 @@ import ToggleTheme from "./ToggleTheme";
 /* eslint-disable jsx-a11y/alt-text */
 const Header = () => {
   return (
-    <header className="flex bg-base-100 justify-between p-2 px-6 items-center">
+    <header className="flex items-center justify-between p-4 px-6 border-b border-gray-200 dark:border-gray-600">
       <div>
-        <a className="btn btn-ghost normal-case text-xl">NextRead</a>
+        <button className="text-xl">
+          Next<span className="font-bold text-blue-500">Read</span>
+        </button>
       </div>
       <div>
         <ToggleTheme />

@@ -13,14 +13,12 @@ const ToggleTheme = () => {
 
   const currentTheme = theme === "system" ? systemTheme : theme;
 
-  console.log(currentTheme);
-
   if (currentTheme === "dark") {
     return (
       <button
         onClick={() => setTheme("light")}
         type="button"
-        className="btn btn-ghost normal-case text-xl"
+        className="p-1 text-sm text-black bg-white rounded-full hover:bg-white focus:outline-none focus:ring-white dark:bg-white dark:hover:bg-white dark:focus:ring-white dark:border-white"
       >
         <SunIcon className="h-5" />
       </button>
@@ -30,7 +28,7 @@ const ToggleTheme = () => {
       <button
         onClick={() => setTheme("dark")}
         type="button"
-        className="btn btn-ghost normal-case text-xl"
+        className="p-1 text-sm text-white bg-gray-800 rounded-full hover:bg-gray-900 focus:outline-none focus:ring-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
       >
         <MoonIcon className="h-5" />
       </button>
